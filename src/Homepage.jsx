@@ -1,7 +1,5 @@
 import { React, useState, useEffect } from 'react';
 
-
-
 const Homepage = () => {
 
 
@@ -25,7 +23,7 @@ const Homepage = () => {
 
     // console.log(email.length === 0);
     useEffect(() => {
-        if (email.length === 0 ) {
+        if (email.length === 0) {
             setEmailError('')
         }
         // if (email.length < 2 ) {
@@ -61,15 +59,12 @@ const Homepage = () => {
 
 
     const HandleSubmit = () => {
-
-
-        if(name && email && phone){
-        console.log("Name :" ,name);
-        console.log("Email :" ,email);
-        console.log("Phone :" ,phone);
-        }
+         
+         console.log("Name :", name);
+         console.log("Email :", email);
+         console.log("Phone :", phone);
+            
     }
-
 
     return (
         <div className='homepage'>
@@ -109,6 +104,7 @@ const Homepage = () => {
                         </div>
                     </div>
 
+
                     <div className='homepage__content__input__button'>
                         <button className="homepage__content__input__button__button2" type="submit" onClick={HandleSubmit}>SUBMIT</button>
                     </div>
@@ -118,6 +114,3 @@ const Homepage = () => {
 }
 
 export default Homepage;
-
-
-
